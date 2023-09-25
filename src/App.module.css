@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: '100%';
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.form {
+  width: 68rem;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  flex: 1;
+  max-width: 70rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  
+  background-color: var(--purple-300);
+  border: 0;
+  border-radius: 8px;
+  color: var(--white);
+
+  padding: .8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: var(--purple-500);
+}
+
+form input {
+  flex: 1;
+  background-color: var(--gray-700);
+  border: 0;
+  border-radius: 8px;
+  color: var(--white);
+  padding: 1rem;
+  font-size: 1.125rem;
+}
+
+.tasks {
+  width: 68rem;
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.taskTitle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.taskCreate {
+  color: var(--blue);
+}
+
+.taskQtd {
+  color: var(--white);
+  background-color: var(--gray-400);
+  padding: 0 .5rem;
+  border-radius: 10px;
+  margin-left: 1rem;
+  font-size: .875rem;
+}
+
+.taskCompleted {
+  color: var(--purple-300);
+}
+
+footer {
+  background-color: var(--purple-500);
+  padding: 1rem;
+  text-align: center;
+}

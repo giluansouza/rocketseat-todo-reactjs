@@ -1,0 +1,74 @@
+.taskCard {
+    width: 100%;
+    background-color: var(--gray-500);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: .750rem
+}
+
+.taskCard p {
+    flex: 1;
+}
+
+.taskCard + .taskCard {
+    margin-top: 1rem;
+}
+
+.taskCard button {
+    background-color: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 2px;
+}
+
+.taskCard button:hover {
+    color: var(--red-500);
+}
+
+.round-checkbox {
+    position: relative;
+  }
+  
+  .round-checkbox input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .round-checkbox span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  
+  .round-checkbox span:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .round-checkbox input[type="checkbox"]:checked ~ span {
+    background-color: #2196F3;
+  }
+  
+  .round-checkbox input[type="checkbox"]:checked ~ span:after {
+    display: block;
+  }
+  
+  .round-checkbox span:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }

@@ -1,0 +1,13 @@
+.tasksEmpty {
+    border-top: 1px solid var(--gray-400);
+    display: flex;
+    width: 100%;
+    max-width: 70rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+.tasksEmpty img {
+    margin-bottom: 2rem;
+}   
